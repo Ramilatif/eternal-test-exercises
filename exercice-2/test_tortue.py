@@ -1,3 +1,5 @@
+from tortue import Tortue
+
 def test_move_tortue():
   """On teste une classe Tortue(origine_x, origine_y) pourvue des méthodes walk(int), et look_<direction>()
   ainsi que teleport(x, y).
