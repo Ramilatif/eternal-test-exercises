@@ -1,6 +1,6 @@
 Name               Stmts   Miss  Cover   Missing
 ------------------------------------------------
-test_selenium.py      36      0   100%
+test_selenium.py      36     21    42%   18-39, 50
 ws_util.py             5      0   100%
 ------------------------------------------------
-TOTAL                 41      0   100%
+TOTAL                 41     21    49%

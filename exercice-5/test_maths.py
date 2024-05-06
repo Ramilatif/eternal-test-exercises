@@ -19,3 +19,15 @@ def divide(x, y):
 """écrire les tests unitaires pour ces fonctions.
 atteindre un coverage de 100%
 """
+
+assert add(10,10)== 20
+assert add(10,-10)== 0
+
+assert subtract(10,10) ==0
+assert subtract(10,-10) == 20
+
+assert multiply(10,10) == 100
+assert multiply(10,-10)== -100
+
+assert divide (10,2) == 5
+assert divide (10,0) == ValueError("Cannot divide by zero!")

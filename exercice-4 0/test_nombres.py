@@ -32,3 +32,5 @@ class NumberDisplay:
         art.tprint(to_show)
 
 
+
+assert (number2anybase(10,5)) == (10,10)
