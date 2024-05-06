@@ -1,4 +1,4 @@
-.PHONY = coverage test
+cd e.PHONY = coverage test
 coverage:
 	. ../.venv/bin/activate; coverage run -m pytest .;coverage report -m | tee coverage.txt
 
