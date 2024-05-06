@@ -5,10 +5,23 @@ Coverage 100%. Les tests doivent passer. Des docstrings doivent être présentes
 import pytest
 
 def find_largest(numbers: list):
-    raise NotImplementedError()
+    if  numbers != [] and not(any(isinstance(element, str) for element in numbers)):
+        return max(numbers)
+    else:
+        raise ValueError
+    
 
 def find_absolute_largest(numbers: list):
-    raise NotImplementedError()
+     if  numbers != [] and not(any(isinstance(element, str) for element in numbers)):
+        x = max(map(lambda x: abs(x), numbers))
+        if -x in numbers:
+            x = -x
+        return x
+            
+     else:
+        raise ValueError
+    
+    
 
 def test_find_largest():
     assert find_largest([0, 1, 2, 3, 40]) == 40
